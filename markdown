@@ -8,4 +8,4 @@ require 'markdown'
 text = Markdown.new(File.read(ARGV[0])).to_html
 File.open('/tmp/markdown.html','w'){|f| f.puts text}
 
-exec "firefox /tmp/markdown.html"
+exec "google-chrome /tmp/markdown.html"
